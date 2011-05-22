@@ -42,6 +42,38 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins
+			</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.6</version>
+				<executions>
+					<execution>
+						<id>before-compile</id>
+						<phase>process-resources</phase>
+						<configuration>
+							<target>
+								<echo message="Before Compile Phase." />
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>after-compile</id>
+						<phase>process-classes</phase>
+						<configuration>
+							<target>
+								<echo message="After Compile Phase." />
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>					
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
