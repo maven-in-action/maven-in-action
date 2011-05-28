@@ -14,8 +14,8 @@
 	</modules>
 	
 	<scm>
-		<connection>scm:git@github.com:maven-in-action/maven-in-action.git</connection>
-		<developerConnection>scm:git@github.com:maven-in-action/maven-in-action.git</developerConnection>
+		<connection>scm:git:git@github.com:maven-in-action/maven-in-action.git</connection>
+		<developerConnection>scm:git:git@github.com:maven-in-action/maven-in-action.git</developerConnection>
 		<url>https://maven-in-action@github.com/maven-in-action/maven-in-action.git</url>
 	</scm>
 	
